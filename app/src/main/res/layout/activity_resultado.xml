@@ -45,10 +45,9 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/barraDeGordura"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.133" />
 
     <TextView
         android:id="@+id/textViewTipoDeObesidade"
@@ -69,7 +68,7 @@
         android:id="@+id/buttonNovo"
         android:layout_width="160dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginTop="96dp"
         android:backgroundTint="#1AFF00"
         android:text="@string/resetar"
         android:textColor="#000000"
@@ -79,14 +78,14 @@
         app:layout_constraintHorizontal_bias="0.672"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewOMS"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/buttonSair"
         android:layout_width="160dp"
         android:layout_height="60dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="36dp"
         android:backgroundTint="#FF0404"
         android:text="@string/sair"
         android:textColor="#000000"
@@ -94,6 +93,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewOMS"
-        app:layout_constraintVertical_bias="0.649" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
