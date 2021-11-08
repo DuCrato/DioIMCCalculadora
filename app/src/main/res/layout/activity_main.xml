@@ -8,15 +8,16 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/IMC"
+        android:id="@+id/logo_imc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/imc"
         android:textColor="#039BE5"
         android:textSize="96sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,13 +25,13 @@
         android:id="@+id/Calculadora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="116dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/calculadora"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintHorizontal_bias="0.579"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -64,40 +65,6 @@
     </RadioGroup>
 
 
-    <EditText
-        android:id="@+id/editTextAltura"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:digits="0123456789."
-        android:ems="10"
-        android:hint="@string/altura_em_cm"
-        android:inputType="number"
-        android:textColorHint="#000000"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/caixa_de_sexo" />
-
-    <EditText
-        android:id="@+id/editTextPeso"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:digits="0123456789."
-        android:ems="10"
-        android:hint="@string/peso_em_quilos"
-        android:inputType="numberDecimal"
-        android:textColorHint="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_calcular"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAltura"
-        app:layout_constraintVertical_bias="0.0" />
-
     <Button
         android:id="@+id/button_calcular"
         android:layout_width="300dp"
@@ -111,6 +78,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/altura_campo"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="@string/campo_altura"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caixa_de_sexo" />
+
+    <EditText
+        android:id="@+id/peso_campo"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="96dp"
+        android:ems="10"
+        android:hint="@string/peso_altura"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button_calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/altura_campo"
+        app:layout_constraintVertical_bias="0.428" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

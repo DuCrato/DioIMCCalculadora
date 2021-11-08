@@ -9,90 +9,111 @@
     tools:layout_editor_absoluteY="-11dp">
 
     <TextView
-        android:id="@+id/textViewResultadoIMC"
+        android:id="@+id/text_resultado_imc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
+        android:layout_marginBottom="28dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/resultadoIMC"
         android:textColor="#000000"
-        android:textSize="34sp"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_tipo_corpo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ProgressBar
-        android:id="@+id/barraDeGordura"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-        android:layout_width="327dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="44dp"
-        android:max="50"
-        android:progress="31"
-        android:progressTint="#061EEF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewResultadoIMC" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textViewOMS"
-        android:layout_width="337dp"
-        android:layout_height="183dp"
-        android:layout_marginTop="80dp"
-        android:text="@string/textoOMS"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/barraDeGordura"
-        app:layout_constraintVertical_bias="0.133" />
-
-    <TextView
-        android:id="@+id/textViewTipoDeObesidade"
+        android:id="@+id/text_tipo_corpo"
         android:layout_width="291dp"
         android:layout_height="41dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="268dp"
         android:text="@string/tipo_obesidade"
         android:textColor="#000000"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/textViewOMS"
+        app:layout_constraintBottom_toTopOf="@+id/text_obesidade"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/buttonNovo"
+        android:id="@+id/buttonResetar"
         android:layout_width="160dp"
         android:layout_height="60dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginBottom="72dp"
         android:backgroundTint="#1AFF00"
         android:text="@string/resetar"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonSair"
-        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewOMS"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/text_obesidade"
+        app:layout_constraintVertical_bias="1.0" />
 
-    <Button
-        android:id="@+id/buttonSair"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="36dp"
-        android:backgroundTint="#FF0404"
-        android:text="@string/sair"
+    <TextView
+        android:id="@+id/text_seu_imc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seu_imc"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_resultado_imc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/text_magreza"
+        android:layout_width="364dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/oms_magreza"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_tipo_corpo" />
+
+    <TextView
+        android:id="@+id/text_normal"
+        android:layout_width="361dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/oms_normal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_magreza" />
+
+    <TextView
+        android:id="@+id/text_sobrepeso"
+        android:layout_width="365dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/oms_sobrepeso"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_obesidade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_normal"
+        app:layout_constraintVertical_bias="0.218" />
+
+    <TextView
+        android:id="@+id/text_obesidade"
+        android:layout_width="357dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="172dp"
+        android:text="@string/oms_obesidade"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewOMS"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

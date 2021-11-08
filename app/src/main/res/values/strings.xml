@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">IMCDioProjeto1</string>
+    <string name="app_name">IMC Dio</string>
     <string name="peso_em_quilos">Peso em quilos (ex. 80.0)</string>
     <string name="altura_em_cm">Altura em Cm (ex. 1.75)</string>
     <string name="button_calcular">Calcular</string>
@@ -9,9 +9,15 @@
     <string name="imc">IMC</string>
     <string name="resetar">Resetar</string>
     <string name="sair">Sair</string>
-    <string name="textoOMS">De acordo com a OMS, seu IMC está acima do recomendado para a sua altura. Para atingir um valor de IMC normal, seu peso deve estar entre 56.7 e 76.3 kg.</string>
-    <string name="resultadoIMC">Seu IMC é de %sKg/m²</string>
+    <string name="resultadoIMC">IMC Valor</string>
     <string name="tipo_obesidade">Obesidade</string>
     <string name="caixa_homem">Homem</string>
     <string name="caixa_mulher">Mulher</string>
+    <string name="seu_imc">Seu IMC é</string>
+    <string name="campo_altura">Altura (ex 1.75)</string>
+    <string name="peso_altura">Peso (ex 75.3)</string>
+    <string name="oms_magreza">Magreza, quando o resultado é menor que 18,5 kg/m2;</string>
+    <string name="oms_normal">Normal, quando o resultado está entre 18,5 e 24,9 kg/m2;</string>
+    <string name="oms_sobrepeso">Sobrepeso, quando o resultado está entre 24,9 e 30 kg/m2;</string>
+    <string name="oms_obesidade">Obesidade, quando o resultado é maior que 30 kg/m2</string>
 </resources>
