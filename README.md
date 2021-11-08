@@ -1,6 +1,6 @@
 # DioIMCCalculadora
  
- Para consolidação de conhecimento da aula "Projetando o primeiro Aplicativo usando Koltin" do bootcamp Carrefour Android Developer.
+ Para consolidação de conhecimento da aula "Projetando o primeiro Aplicativo usando Kotlin" do bootcamp Carrefour Android Developer.
 
  Projeto simples, com tratamento de erros básico. Trabalhei somente no modo Portrait
  
